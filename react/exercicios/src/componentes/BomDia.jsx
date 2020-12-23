@@ -10,3 +10,9 @@ export default props => [
 //         <h1>Bom dia {props.nome}!</h1>
 //         <h2>Até breve!</h2>
 //     </React.Fragment>
+
+//  export default props => 
+//     <div>
+//         <h1>Bom dia {props.nome}!</h1>
+//         <h2>Até breve!</h2>
+//     </div>
