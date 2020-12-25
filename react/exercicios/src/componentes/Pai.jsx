@@ -8,6 +8,6 @@ export default props =>
       <ul>
           <Filho nome="Pedro" sobrenome={props.sobrenome} />
           <Filho {...props} />
-          <Filho nome="Carla" {...props} />
+          <Filho {...props}  nome="Carla" />
       </ul>
   </div>
