@@ -1,1 +1,7 @@
 https://github.com/facebook/create-react-app
+
+projeto cadastro usuário
+criar pasta crud/backend
+na pasta backend rodar os comandos 
+npm init -y (criar package json)
+npm i --save json-server@0.13.0 -E (instalar dependência json)
