@@ -15,6 +15,7 @@
         fetch(url)
             .then(resp => resp.json())
             .then(estados => {
+                console.log(estados)
                 const itens = estados.reduce(
                   (html, estado) => html + `<li>${estado.nome}</li>`, ''
                 )
