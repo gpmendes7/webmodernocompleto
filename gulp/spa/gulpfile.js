@@ -9,5 +9,6 @@ module.exports.default = series(
   parallel(
     series(appHTML, appCSS, appJS, appIMG),
     series(depsCSS, depsFonts),
+    series(monitorarArquivos, servidor),
   )
 )
