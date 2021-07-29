@@ -1,6 +1,6 @@
 const gulp = require('gulp')
 const webserver = require('gulp-webserver')
-const watch = require('gulp-watch')
+//const watch = require('gulp-watch')
 
 function servidor(cb) {
   return gulp.src('build')
@@ -12,10 +12,16 @@ function servidor(cb) {
 }
 
 function monitorarArquivos(cb) {
-  watch('src/**/*.html', () => gulp.series('appHTML')())
-  watch('src/**/*.scss', () => gulp.series('appCSS')())
-  watch('src/**/*.js', () => gulp.series('appJS')())
-  watch('src/assets/imgs/**/*.*', () => gulp.series('appIMG')())
+  // watch('src/**/*.html', () => gulp.series('appHTML')())
+  // watch('src/**/*.scss', () => gulp.series('appCSS')())
+  // watch('src/**/*.js', () => gulp.series('appJS')())
+  // watch('src/assets/imgs/**/*.*', () => gulp.series('appIMG')())
+
+  gulp.watch('src/**/*.html', gulp.series('appHTML'))
+  gulp.watch('src/**/*.scss', gulp.series('appCSS'))
+  gulp.watch('src/**/*.js', gulp.series('appJS'))
+  gulp.watch('src/assets/imgs/**/*.*', gulp.series('appIMG'))
+
   return cb()
 }
 
