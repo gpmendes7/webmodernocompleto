@@ -1,11 +1,13 @@
-// export default class Pessoa {
-//   cumprimentar() {
-//     return 'Bom dia!'
-//   }
-// }
+import './modulos/moduloA'
 
-module.exports = class Pessoa {
+export default class Pessoa {
   cumprimentar() {
     return 'Bom dia!'
   }
 }
+
+// module.exports = class Pessoa {
+//   cumprimentar() {
+//     return 'Bom dia!'
+//   }
+// }
