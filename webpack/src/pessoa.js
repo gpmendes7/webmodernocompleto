@@ -1,5 +1,5 @@
 import "./modulos/moduloA";
-import "./assets/css/estilo.css";
+import "./assets";
 
 export default class Pessoa {
   cumprimentar() {
